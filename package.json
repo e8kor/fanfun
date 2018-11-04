@@ -1,0 +1,36 @@
+{
+  "name": "fanfun",
+  "version": "1.0.0",
+  "description": "Facebook Messanger Bot Template",
+  "main": "./build/index.js",
+  "types": "./build/index.d.ts",
+  "scripts": {
+    "host": "npm run rebuild && npm run start",
+    "start": "npm run serve",
+    "build": "npm run rebuild",
+    "rebuild": "rm -rf ./build && npm run build-ts && cp .env ./build/",
+    "serve": "node build/index.js",
+    "test": "jest --forceExit --coverage --verbose",
+    "build-ts": "tsc",
+    "watch-ts": "tsc -w",
+    "tslint": "tslint -c tslint.json -p tsconfig.json"
+  },
+  "keywords": ["facebook", "typescript", "node"],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/dotenv": "^4.0.3",
+    "@types/node": "^10.12.2",
+    "ts-node": "^7.0.1"
+  },
+  "dependencies": {
+    "bootbot": "^1.0.16",
+    "nodemon": "^1.18.5",
+    "dotenv": "^6.0.0",
+    "typescript": "^3.1.6"
+  },
+  "engines": {
+    "node": ">=6.14.1",
+    "yarn": ">=1.5.1"
+  }
+}

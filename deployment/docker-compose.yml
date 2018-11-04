@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  api:
+    image: fanfun:latest
+    volumes:
+      - ./config/.env:/usr/src/app/.env
+    ports:
+      - "3001:3001"
+    restart: always
