@@ -84,4 +84,4 @@ bot.hear('ask me something', (payload: Payload, chat: Chat) => {
 	};
 });
 
-bot.start(process.env['BOOT_BOT_PORT']);
+bot.start(process.env['PORT']);
