@@ -1,0 +1,14 @@
+title: fanfun
+description: Facebook Messages Bot Template
+github: [metadata]
+encoding: UTF-8
+theme: jekyll-theme-slate
+kramdown:
+  input: GFM
+  hard_wrap: false
+  future: true
+  jailed: false
+footer-links:
+  github: e8kor
+  linkedin: ikorniichuk
+  twitter: e8kor
