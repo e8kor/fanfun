@@ -5,8 +5,8 @@
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "scripts": {
-    "host": "npm run rebuild && npm run start",
-    "start": "npm run serve",
+    "start": "npm run rebuild && npm run host",
+    "host": "npm run serve",
     "build": "npm run rebuild",
     "rebuild": "rm -rf ./build && npm run build-ts && cp .env ./build/",
     "serve": "node build/index.js",

@@ -1,1 +1,1 @@
-npm run host
+npm run start

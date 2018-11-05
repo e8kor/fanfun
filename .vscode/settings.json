@@ -1,7 +1,0 @@
-{
-    "appService.zipIgnorePattern": [
-        "node_modules{,/**}"
-    ],
-    "appService.defaultWebAppToDeploy": "/subscriptions/22617a06-d01d-4952-b759-072b4bbbcdab/resourceGroups/appsvc_rg_linux_centralus/providers/Microsoft.Web/sites/fanfun",
-    "appService.deploySubpath": ""
-}
