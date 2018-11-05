@@ -5,10 +5,10 @@
   "main": "./build/index.js",
   "types": "./build/index.d.ts",
   "scripts": {
-    "start": "npm run rebuild && npm run host",
+    "start": "npm install && npm run rebuild && npm run host",
     "host": "npm run serve",
     "build": "npm run rebuild",
-    "rebuild": "rm -rf ./build && npm run build-ts && cp .env ./build/",
+    "rebuild": "rm -rf ./build && npm run build-ts && [ -f \".env\" ] && cp .env ./build/",
     "serve": "node build/index.js",
     "test": "jest --forceExit --coverage --verbose",
     "build-ts": "tsc",
