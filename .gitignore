@@ -84,6 +84,7 @@ typings/
 
 # VS Code
 /.vscode/
+*.code-workspace
 
 # Project Related
 /build

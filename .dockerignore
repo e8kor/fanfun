@@ -82,4 +82,9 @@ typings/
 
 # End of https://www.gitignore.io/api/node
 
+# VS Code
+/.vscode/
+*.code-workspace
+
+# Project Related
 /build
