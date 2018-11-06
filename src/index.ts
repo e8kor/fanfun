@@ -20,6 +20,10 @@ bot.hear(['hello', 'hi', /hey( there)?/i], (payload: Payload, chat: Chat) => {
 	console.log('The user said "hello", "hi", "hey", or "hey there"');
 });
 
+bot.hear([/test message/i,], (payload: Payload, chat: Chat) => {
+	chat.say('Hello, human friend! I\'m a bot, my source code located on https://deton.e8kor.me/fanfun-github');
+});
+
 bot.hear(['hello', 'hi', /hey( there)?/i], (payload: Payload, chat: Chat) => {
 	// Send a text message followed by another text message that contains a typing indicator
 	chat.say('Hello, human friend!').then(() => {
